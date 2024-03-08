@@ -1,11 +1,11 @@
 
 const handleApiCall = (req,res) => {
     // API Keys //////////////////////////////////////////////////////////////////////
-    const PAT = '32d71b66a012406e96284375e81ec617';
-    const USER_ID = 'al1m';       
-    const APP_ID = 'face-detector-react';
-    const MODEL_ID = 'face-detection';
-    const MODEL_VERSION_ID = '6dc7e46bc9124c5c8824be4822abe105';    
+    const PAT = process.env.CLARIFAI_PAT;
+    const USER_ID = process.env.CLARIFAI_UID;    
+    const APP_ID = process.env.CLARIFAI_APP_ID;
+    const MODEL_ID = process.env.CLARIFAI_MODEL_ID;
+    const MODEL_VERSION_ID = process.env.CLARIFAI_MODEL_VID;  
     //////////////////////////////////////////////////////////////////////////////////
 
     const raw = JSON.stringify({
